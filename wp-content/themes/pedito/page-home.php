@@ -49,6 +49,7 @@
             $args = array(
             'style' => 'list',
             'hide_empty' => 1,
+            'order' => 'category_count',
             );
             
             foreach (get_categories($args) as $category) {

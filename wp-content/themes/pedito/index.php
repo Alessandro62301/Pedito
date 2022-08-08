@@ -68,11 +68,17 @@
               $args = array(
                 'post_type' => 'produto',
                 'cat' => $qCategory,
+                'meta_key' => 'price',
+	              'orderby' => 'meta_value',
+                'order' => 'ASC'
                 );
             } else {
               $args = array(
                 'post_type' => 'produto',
                 'post_title_like' => $qTitle,
+                'meta_key' => 'price',
+	              'orderby' => 'meta_value',
+                'order' => 'ASC'
                 );
             }
             $query = new WP_Query( $args );
