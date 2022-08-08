@@ -81,7 +81,7 @@ $post_id = get_the_ID();
       </div>
     </div>
     <?php endwhile; else: ?>
-        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+        <p><?php _e('Desculpe, nenhum produto corresponde aos seus critérios de busca.'); ?></p>
     <?php endif; ?>
   </div>
 </main>
@@ -92,7 +92,7 @@ $post_id = get_the_ID();
     <ul class="row-content">
         <?php 
             $qCategory = get_field('categoria_para_recomendar');
-            if($qCategory != '') {
+            if($qCategory != '404c') {
               $args = array(
                 'post_type' => 'produto',
                 'cat' => $qCategory,

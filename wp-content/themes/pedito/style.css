@@ -924,14 +924,15 @@ body {
   position: relative;
   text-align: center;
 }
-#localization-page .localization .title-localization:before {
+/* #localization-page .localization .title-localization:before {
   background: url(./images/icon/localization.png);
   content: "";
   height: 1.3125rem;
-  left: -15px;
+  left: -24px;
   position: absolute;
   width: 1.3125rem;
-}
+  top: 7px;
+} */
 #localization-page .maps .wrapper {
   align-items: center;
   display: flex;

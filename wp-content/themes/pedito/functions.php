@@ -63,7 +63,11 @@ function pd_get_categories(){
 
 // ! ACF
 
-			if( function_exists('acf_add_local_field_group') ):
+$array_cat = pd_get_categories();
+$array_categories = ['404c' => 'Sem categoria']  + $array_cat;
+
+
+if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_62e2a30839db6',
@@ -167,7 +171,7 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
-			'choices' => pd_get_categories(),
+			'choices' => $array_categories,
 			'default_value' => false,
 			'allow_null' => 0,
 			'multiple' => 0,

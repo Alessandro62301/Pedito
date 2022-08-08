@@ -38,16 +38,20 @@
     <footer class="maps">
       <div class="container">
         <div class="wrapper">
+          <?php if(get_field("link_google_maps")) :?>
           <div class="google-maps">
-            <a href="#">
+            <a href="<?php the_field("link_google_maps") ?>">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/google-maps.png" width="71" height="71" alt="google maps">
             </a>
           </div>
+          <?php endif; ?>
+          <?php if(get_field("link_waze")) :?>
           <div class="waze">
-            <a href="#">
+            <a href="<?php the_field("link_waze") ?>">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/waze.png" width="71" height="71" alt="waze maps">
             </a>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </footer>

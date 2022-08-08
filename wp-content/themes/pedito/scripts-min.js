@@ -5642,11 +5642,10 @@ const historyBack = () => {
     if (window.history.length > 2) {
       window.history.back();
     } else {
-      window.location.replace("http://wordpress-pedito.local");
+      window.location.replace(window.location.hostname);
     }
   });
 };
-
 const search = () => {
   const internalScreen = $(".header-internal-screen");
   const search = $("#search");

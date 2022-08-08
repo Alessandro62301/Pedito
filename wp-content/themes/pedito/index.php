@@ -9,7 +9,7 @@
         <div class="wrapper">
           <div class="logo-content">
             <div class="logo">
-              <a href="/menu">
+              <a href="<?php echo get_home_url(); ?>">
                 <img src="<?php the_field('logo_do_restaurante',$menu) ?>" width="46" height="46" alt="Logo">
               </a>
             </div>
@@ -20,10 +20,10 @@
           <div class="search-menu">
             <form class="search">
               <label for="search">Buscar</label>
-              <input type="search" id="search" name="s" placeholder="<?php the_field('texto_do_campo_de_busca',$menu) ?>">
+              <input type="search" id="search" name="s" placeholder="O que você deseja ?">
             </form>
             <div class="menu">
-              <a href="/localizacao" class=".button-localization">
+              <a href="<?php echo get_home_url().'/localizacao'; ?>" class=".button-localization">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon/localization-red.png" width="20" height="20" alt="Enviar Localização">
               </a>
             </div>

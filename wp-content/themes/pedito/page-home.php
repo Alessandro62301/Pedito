@@ -10,7 +10,7 @@
   <div class="container">
     <div class="wrapper">
       <div class="localization">
-        <a href="/localizacao" class=".button-localization">
+        <a href="<?php echo get_home_url().'/localizacao'; ?>" class=".button-localization">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon/submit.svg" width="21" height="21" alt="Enviar localização">
         </a>
       </div>
@@ -54,7 +54,7 @@
             foreach (get_categories($args) as $category) {
               if($category->term_id != 1):
           ?>
-          <li class="item-category"><a href="<?php echo 'produtos/?c='.$category->term_id ?>" class="title subt-2"><?php  echo $category->name; ?></a></li>
+          <li class="item-category"><a href="<?php echo get_home_url().'/produtos/?c='.$category->term_id ?>" class="title subt-2"><?php  echo $category->name; ?></a></li>
           <?php endif; }?>
         </ul> 
       </nav>
