@@ -6,7 +6,7 @@
 <div id="store" class="screen-height">
 
 <!--Header-->
-<header class="header">
+<header class="header" style="background-image: url(<?php the_field('banner_fundo')?>);">
   <div class="container">
     <div class="wrapper">
       <div class="localization">
